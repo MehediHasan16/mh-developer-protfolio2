@@ -17,10 +17,17 @@ body {
 h1 {
     font-size: 60px;
 
+
+
 }
 
 h2 {
     font-size: 45px;
+
+}
+
+h3 {
+    font-size: 37px;
 
 }
 
@@ -113,7 +120,8 @@ h2 {
 
 .half3-width {
     width: 100%;
-    padding: 50px;
+    /* text-align: center; */
+    /* padding: 50px; */
 }
 
 .half3-width p {
@@ -141,7 +149,7 @@ h2 {
 
 
 .card-items {
-    flex: 1 1 21rem;
+
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -150,6 +158,7 @@ h2 {
     box-shadow: 14px -3px 32px rgb(185 183 183);
     /* width: 100%; */
     padding: 10px 20px;
+    border-radius: 10px;
 
     text-align: center;
     align-self: normal;
@@ -177,4 +186,153 @@ h2 {
     color: rgb(255, 255, 255);
     font-weight: 700;
 
+}
+
+.observation {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 110px;
+    box-shadow: 14px -3px 32px rgb(185 183 183);
+    margin: 70px;
+    border-radius: 10px;
+
+}
+
+.observation-part {
+    text-align: center;
+}
+
+footer {
+    height: 150px;
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+
+}
+
+.footer-text-color {
+    color: rgb(172, 172, 172);
+}
+
+
+
+small {
+    /* margin-bottom: 20px; */
+
+    color: rgb(255, 255, 255);
+    display: inline-block;
+
+
+}
+
+.skill-heading {
+    text-align: center;
+}
+
+.skill-item {
+    margin: 5px;
+    /* border: 2px solid red; */
+}
+
+.skill {
+    width: 500px;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    margin: 60px auto;
+    color: rgb(130, 77, 77);
+    padding: 20px;
+
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px rgba(0, 0, 0, 0.22);
+}
+
+.skill li {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.bar {
+    background: #dfdfdf;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    /* box-shadow: 14px -3px 32px rgb(185 183 183); */
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.23, .8, .25, 1);
+}
+
+.bar:hover {
+    box-shadow: 14px -3px 32px rgb(104, 104, 104);
+    /* box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px rgba(0, 0, 0, 0.24); */
+    /* background: #5980d5; */
+}
+
+.bar span {
+    height: 20px;
+    float: left;
+    /* background-image: linear-gradient(blue, rgb(133, 253, 255)); */
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252, 103, 103, 1)100%);
+}
+
+.html {
+    width: 90%;
+    animation: html 3s;
+}
+
+.css {
+    width: 70%;
+    animation: css 3s;
+}
+
+.php {
+    width: 45%;
+    animation: php 3s;
+}
+
+.javascript {
+    width: 80%;
+    animation: javascript 3s;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 45%;
+    }
+}
+
+@keyframes javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
 }
